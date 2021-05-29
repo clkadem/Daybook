@@ -63,6 +63,7 @@ namespace Daybook
                     meeting.startTimeZone = (string)dataRow["startTimeZone"];
                     meeting.endTimeZone = (string)dataRow["endTimeZone"];
 
+
                     collection.Add(meeting);
                 }
                 return new SuccessDataResult<ObservableCollection<Meeting>>(collection, Message.succces);
