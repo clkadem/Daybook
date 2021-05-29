@@ -7,7 +7,7 @@ namespace Daybook
         static void Main(string[] args)
         {
             AwsUser awsUser = new AwsUser();
-            awsUser.GetUser("asdf", "asd");
+            awsUser.GetUserId("text@deneme.com", "123456");
         }
     }
 }
