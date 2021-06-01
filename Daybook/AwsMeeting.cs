@@ -29,7 +29,7 @@ namespace Daybook
             return new ErrorResult(Message.Error);
         }
 
-        public DataResult<ObservableCollection<Todo>> GetMeeting(int UId)
+        public DataResult<ObservableCollection<Meeting>> GetMeeting(int UId)
         {
 
             AwsConnection awsConnection = new AwsConnection();
@@ -46,7 +46,7 @@ namespace Daybook
                 baglayici.SelectCommand = komut;
                 baglayici.Fill(tablo);
 
-                ObservableCollection<Todo> collection = new ObservableCollection<Meeting>();
+                ObservableCollection<Meeting> collection = new ObservableCollection<Meeting>();
 
 
                 foreach (DataRow dataRow in tablo.Rows)
